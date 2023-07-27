@@ -5,9 +5,15 @@
 		<Nullable>disable</Nullable>
 	</PropertyGroup>
 	<ItemGroup>
-	  <PackageReference Include="GraphQL.Client" Version="6.0.0" />
+	  <Compile Remove="Build\**" />
+	  <Compile Remove="Services\**" />
+	  <EmbeddedResource Remove="Build\**" />
+	  <EmbeddedResource Remove="Services\**" />
+	  <None Remove="Build\**" />
+	  <None Remove="Services\**" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Services\" />
+	  <PackageReference Include="Berger.Extensions.Pagination" Version="1.0.0.8" />
+	  <PackageReference Include="GraphQL.Client" Version="6.0.0" />
 	</ItemGroup>
 </Project>

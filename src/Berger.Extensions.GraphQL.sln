@@ -5,6 +5,13 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Berger.Extensions.GraphQL", "Berger.Extensions.GraphQL\Berger.Extensions.GraphQL.csproj", "{618025C7-59DC-487E-8AEB-1AD752A3D69A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{BB6140F7-019C-4B99-89D2-4741C80EB1A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{00858A73-08F6-41B0-A038-2E49194AB3B4}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\Berger.Extensions.GraphQL.yml = ..\build\Berger.Extensions.GraphQL.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{618025C7-59DC-487E-8AEB-1AD752A3D69A} = {BB6140F7-019C-4B99-89D2-4741C80EB1A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4961BE93-F316-4B63-8144-768113F9C617}
