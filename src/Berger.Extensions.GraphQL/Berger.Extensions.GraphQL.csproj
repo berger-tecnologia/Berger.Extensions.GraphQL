@@ -4,16 +4,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>disable</Nullable>
 	</PropertyGroup>
+
 	<ItemGroup>
-	  <Compile Remove="Build\**" />
-	  <Compile Remove="Services\**" />
-	  <EmbeddedResource Remove="Build\**" />
-	  <EmbeddedResource Remove="Services\**" />
-	  <None Remove="Build\**" />
-	  <None Remove="Services\**" />
-	</ItemGroup>
-	<ItemGroup>
-	  <PackageReference Include="Berger.Extensions.Pagination" Version="1.0.0.8" />
-	  <PackageReference Include="GraphQL.Client" Version="6.0.0" />
+		<PackageReference Include="Berger.Extensions.Pagination" Version="1.0.0.14" />
+		<PackageReference Include="GraphQL.Client" Version="6.0.0" />
 	</ItemGroup>
 </Project>
