@@ -7,6 +7,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="GraphQL.Client" Version="6.0.1" />
-		<PackageReference Include="Berger.Extensions.Pagination" Version="1.0.0.14" />
+		<PackageReference Include="Berger.Extensions.Pagination" Version="1.0.0.15" />
 	</ItemGroup>
 </Project>
