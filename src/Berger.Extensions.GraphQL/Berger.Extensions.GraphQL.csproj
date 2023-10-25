@@ -1,12 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<TargetFramework>net7.0</TargetFramework>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Berger.Extensions.Pagination" Version="1.0.0.14" />
 		<PackageReference Include="GraphQL.Client" Version="6.0.1" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<ProjectReference Include="..\..\..\Berger.Extensions.Pagination\src\Berger.Extensions.Pagination\Berger.Extensions.Pagination.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<PackageReference Include="Berger.Extensions.Pagination" Version="*" />
 	</ItemGroup>
 </Project>

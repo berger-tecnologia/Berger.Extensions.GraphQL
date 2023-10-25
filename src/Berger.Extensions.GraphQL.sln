@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{00858A73
 		..\build\Berger.Extensions.GraphQL.yml = ..\build\Berger.Extensions.GraphQL.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Troubleshooting", "Troubleshooting", "{9DFA3661-A4B5-4D2D-819F-63D282F9B9CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Berger.Extensions.Pagination", "..\..\Berger.Extensions.Pagination\src\Berger.Extensions.Pagination\Berger.Extensions.Pagination.csproj", "{3507434A-CCFA-4402-B0D6-CB707DF5DA41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,12 +26,17 @@ Global
 		{618025C7-59DC-487E-8AEB-1AD752A3D69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{618025C7-59DC-487E-8AEB-1AD752A3D69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{618025C7-59DC-487E-8AEB-1AD752A3D69A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3507434A-CCFA-4402-B0D6-CB707DF5DA41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3507434A-CCFA-4402-B0D6-CB707DF5DA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3507434A-CCFA-4402-B0D6-CB707DF5DA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3507434A-CCFA-4402-B0D6-CB707DF5DA41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{618025C7-59DC-487E-8AEB-1AD752A3D69A} = {BB6140F7-019C-4B99-89D2-4741C80EB1A0}
+		{3507434A-CCFA-4402-B0D6-CB707DF5DA41} = {9DFA3661-A4B5-4D2D-819F-63D282F9B9CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4961BE93-F316-4B63-8144-768113F9C617}
