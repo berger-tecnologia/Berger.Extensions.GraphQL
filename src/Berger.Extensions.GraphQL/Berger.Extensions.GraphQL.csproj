@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<Nullable>disable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -13,7 +13,7 @@
 		<ProjectReference Include="$(berger-open-source)\Berger.Extensions.Pagination\src\Berger.Extensions.Pagination\Berger.Extensions.Pagination.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Berger.Extensions.Pagination" Version="1.0.0.20" />
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<PackageReference Include="Berger.Extensions.Pagination" Version="1.0.0.24" />
 	</ItemGroup>
 </Project>
