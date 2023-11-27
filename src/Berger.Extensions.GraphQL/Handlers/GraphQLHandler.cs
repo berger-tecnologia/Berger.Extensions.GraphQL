@@ -1,4 +1,6 @@
-﻿namespace Berger.Extensions.GraphQL
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.GraphQL
 {
     public class GraphQLHandler : DelegatingHandler
     {
@@ -7,8 +9,7 @@
         {
             var token = "";
 
-            request.Headers.Add("Authorization", "Bearer " + token);
-            //client.HttpClient.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
+            request.Headers.Add(Standards.Authorization, Standards.Bearer + token);
 
             return await base.SendAsync(request, cancelation);
         }
